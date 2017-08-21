@@ -1,0 +1,58 @@
+body {
+    background-image: url(img/bg.jpg) no-repeat center center scroll;
+    font-family: 'Helvetica Neue', 'Helvetica Neue', sans-serif;
+
+}
+
+#navigation,.navbar .navbar-default{
+  background-image: url("img/header.png") no-repeat;
+    background-size: auto;
+}
+
+#header {
+  height: 500px;
+  background: url(/img/header.png) no-repeat center center scroll;
+  background-size: auto;
+  text-shadow: 1px 1px 2px white; }
+
+/*
+  .header h1 {
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 6em; }
+*/
+
+main {
+    background-image: url(img/bg.jpg);
+   
+/*
+    border-radius: 100px;
+    margin: 20px auto;
+    max-width: 450px;
+    padding: 50px;
+*/
+}
+
+/*
+ #main {
+    float:left;
+    width:500px;
+    background:#9c9;
+    }
+
+    #sidebar {
+    float:right;
+    width:250px;
+   background:#c9c;
+   }
+*/
+
+/*
+button {
+    background-color: #805056;
+    border: none;
+    border-radius: 100px;
+    color: #d9c0c0;
+    font-weight: bold;
+    font-size: 20px;
+}
+*/
