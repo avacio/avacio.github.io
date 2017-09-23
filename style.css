@@ -1,22 +1,35 @@
 html,body {
-    background: url(img/bg.jpg) no-repeat center center fixed;
+    background: url(img/bg-orig.jpg) no-repeat center -80px fixed;
 /*    font-family: 'Helvetica Neue', 'Helvetica Neue', sans-serif;*/
     font-family: 'Roboto', sans-serif;
-    margin-top: 40px;
+
 }
+
 
 .navbar {
+/*
     background-image: url("img/header.png");
-    position: fixed; /* Set the navbar to fixed position */
-/*    font-family: 'Helvetica Neue', 'Helvetica Neue', sans-serif;*/
+    position: fixed;  Set the navbar to fixed position 
+    font-family: 'Helvetica Neue', 'Helvetica Neue', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+*/
+    position: fixed; 
+    display: inline;
+    margin-top: 18px;
 }
 
+/*
 #name{
     text-shadow: 4px 4px 4px #aaa;
     font-size: 25px;
-/*    text-align: inherit;*/
+    display: inline;
+}
+*/
+
+.header {
+/*    background-image: url("img/header.png");*/
+/*    margin-top: 50px;*/
 }
 
 .verticalLine {
@@ -36,6 +49,7 @@ ul li{
 #left_col {
    float:left;
    width:30%;
+    position: fixed;
 
 }
 #right_col {
