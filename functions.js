@@ -4,7 +4,8 @@ var $document = $(document),
 
 $(document).ready(function() {
     $("#about-link").click(function(){
-   	$("#about-bg").fadeToggle(1000);
+   	$("#about").fadeToggle(1000);
+    $("#music").fadeToggle(1000);
     $("#work-nav").fadeToggle(1000);
 //  	$("#about2").toggleClass("active");
     $("body").toggleClass("body-active");
