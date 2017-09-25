@@ -10,14 +10,20 @@
     }
 */
 
-#main {
-    width: 100%;
-    }
+.main {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
 
 .introanimation {
     margin-left: auto;
     margin-right: auto;
     padding-top: 4%;
+    z-index: 999;
+    background-color: white;
+
 }
 
 #loop {
@@ -28,6 +34,7 @@
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 250px;
 }
 
 /*
@@ -40,7 +47,7 @@ body {
 */
 
 .work_container {
-	padding: 190px 0px 0px 0px;
+	padding: 190px 0px 40px 0px;
     margin: 0; 
     margin-right: 0;
     padding-right: 0;
@@ -48,19 +55,21 @@ body {
 	position: relative;
     width: 100%;
     z-index: 3;
+    background-color: white;
 }
 
 
-/*
 .work_container:after {
-    padding: 0px 0px 200px 0px;
-     background: linear-gradient( 45deg, #b34d49 50%, #FFFFFF 50%) 0 0,
-              linear-gradient(-45deg, #b34d49 50%, #FFFFFF 50%) 0 0;
-  background-repeat: repeat-x;
-  background-size: 100px 100px, 100px 100px;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 55px;
+  background: linear-gradient( 45deg, #b34d49 50%, transparent 50%) 0 0,
+              linear-gradient(-45deg, #b34d49 50%, transparent 50%) 0 0;
+  background-size: 100px 100px;
 }
-*/
-
 
 .teaser_item {
 	width: calc(33.33% - 44px);
@@ -96,40 +105,16 @@ header ul li a:hover {
 */
 
 
-/*
-.contact_container:before {
-
-  background: linear-gradient( 45deg, #b34d49 50%, #FFFFFF 50%) 0 0,
-              linear-gradient(-45deg, #b34d49 50%, #FFFFFF 50%) 0 0;
-  background-repeat: repeat-x;
-  background-size: 100px 100px, 100px 100px;
-}
-*/
-
-/*
-.contact_container:before {
-    background: linear-gradient(-45deg, #b34d49 50%, transparent 0), linear-gradient(45deg, #b34d49 50%, transparent 0);
-    background-position: left-bottom;
-    background-repeat: repeat-x;
-    background-size: 32px 32px;
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 32px;
-}
-*/
 .contact_container {
-	position:fixed !important; 
-	z-index:1;
+	position: fixed !important;
+	z-index:-1;
 	height: 500 px;
-    width: 100%
+    width: 100%;
+    background-color: #b34d49;
+    left:0; 
+	bottom:0; 
 	margin:0; 
 	padding:0;
-    background-color: #b34d49;
-    visibility: visible;
 }
 
 .contact_container ul {
@@ -150,3 +135,4 @@ header ul li a:hover {
     width: 30px;
     height: auto;
 }
+
