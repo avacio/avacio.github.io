@@ -1,9 +1,4 @@
 
-element.style {
-    visibility: visible;
-    animation-name: fadeInUp;
-}
-
 /*
 
    #first {
@@ -15,41 +10,34 @@ element.style {
     }
 */
 
+#main {
+    width: 100%;
+    }
+
+.introanimation {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4%;
+}
+
+#loop {
+        display: none;
+    }
+
+
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background-color: white;
 }
 
-.introanimation {
-    margin: auto;
-    padding-top: 3%;
-    position: absolute;
-    visibility: visible;
-    display: none;
-    vertical-align: middle;
+/*
+#logo img {
+    width: 40px; 
+    position: absolute; 
+    left: 30px; 
+    top: 30px; 
 }
-
-.introanimation img {
-    margin-left: auto; 
-    margin-right: auto;
-    height: 100%;
-}
-
-.animation img {
-    margin-left: auto; 
-    margin-right: auto;
-    height: 100%;
-}
-
-.animation {
-    display: block;
-    vertical-align: middle;
-    margin: auto;
-    padding-top: 3%;
-    position: relative;
-   
-}
+*/
 
 .work_container {
 	padding: 190px 0px 0px 0px;
@@ -62,13 +50,25 @@ body {
     z-index: 3;
 }
 
+
+/*
+.work_container:after {
+    padding: 0px 0px 200px 0px;
+     background: linear-gradient( 45deg, #b34d49 50%, #FFFFFF 50%) 0 0,
+              linear-gradient(-45deg, #b34d49 50%, #FFFFFF 50%) 0 0;
+  background-repeat: repeat-x;
+  background-size: 100px 100px, 100px 100px;
+}
+*/
+
+
 .teaser_item {
 	width: calc(33.33% - 44px);
 	margin: 0 22px 44px 22px;
 	height: auto;
 	float: left;
 	position: relative;
-    z-index: -1;
+    z-index: 2;
 }
 
 
@@ -87,4 +87,66 @@ body {
 
 .teaser_item:hover {
     background-color: whitesmoke;
+}
+
+/*
+header ul li a:hover {
+	border-bottom: 5px solid #b34d49;
+}
+*/
+
+
+/*
+.contact_container:before {
+
+  background: linear-gradient( 45deg, #b34d49 50%, #FFFFFF 50%) 0 0,
+              linear-gradient(-45deg, #b34d49 50%, #FFFFFF 50%) 0 0;
+  background-repeat: repeat-x;
+  background-size: 100px 100px, 100px 100px;
+}
+*/
+
+/*
+.contact_container:before {
+    background: linear-gradient(-45deg, #b34d49 50%, transparent 0), linear-gradient(45deg, #b34d49 50%, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+*/
+.contact_container {
+	position:fixed !important; 
+	z-index:1;
+	height: 500 px;
+    width: 100%
+	margin:0; 
+	padding:0;
+    background-color: #b34d49;
+    visibility: visible;
+}
+
+.contact_container ul {
+    position: relative;
+    display: block; 
+    margin: auto;
+    padding: 0;
+}
+
+.contact_container ul li {
+    display: inline-block; 
+    text-decoration: none; 
+    padding: 0 10px 0 10px; 
+    margin: 0; 
+}
+
+.contact_container ul img {
+    width: 30px;
+    height: auto;
 }

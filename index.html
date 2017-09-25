@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8"> 
   </head>
-</html>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- CUSTOM CSS -->
 <link href="style.css" rel="stylesheet">
 <link href="animate.css" rel="stylesheet" type="text/css">
-<!--<link rel="icon" href="img/logo.png">-->
+<link rel="icon" href="img/logo.png">
 
 <!-- CUSTOM FONTS -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,7 +30,7 @@
 				++quoteIndex;
 				quotes.eq(quoteIndex % quotes.length)
 					.fadeIn(500)
-					.delay(4000)
+					.delay(5)
 					.fadeOut(500, showNextQuote);
 			}
 			showNextQuote();
@@ -61,7 +60,7 @@
     
           
             <ul class="nav navbar-nav navbar-left">
-                <a href="resume.pdf" >résumé</a>
+                <a href="resume.pdf">résumé</a>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 <a href="https://3hoursahead.wordpress.com/"> blog </a>
@@ -78,25 +77,22 @@
 -->
 
 <header>
-<!--        <span id="logo" class="scroll"><a href="INSERT URL"><img href="index.html" src="img/logo.png"></a></span>-->
+<!--        <span id="logo" class="scroll"><a href="https://avacio.github.io/"><img href="index.html" src="img/logo.png"></a></span>-->
 </header>
 
 <!-- Animations -->
-    <div class ="main">
+<div class ="main">
 
         <div class="introanimation">
             <div class="animation font_color wow fadeInUp" id="first">
                 <img src="img/animated-header.gif">
             </div>
-        </div>
 
-        <div class="animation">
-            <div class="animation font_color wow fadeInUp" id="loop">
+            <div class="animation" id="loop">
                 <img src="img/animated-header-loop.gif">
             </div>
         </div>
         </div>
-
 
 <body>
    <div class="work_container" id="work">
@@ -163,7 +159,21 @@
         <br clear="all">
     </div>
     
-    <script src="wow.min.js"></script>
+        <div class="contact_container">
+        <div class="description">
+        <br><br><br>
+            <h1><font color = white>Blah blah</font></h1>
+        <p>Bloo bloo</p>
+            <ul>
+                <li><a href="mailto:lexigerv@gmail.com" target="_blank"><img src="img/mail.png"></a></li>
+                <li><a href="https://ca.linkedin.com/in/alexisgervacio" target="_blank"><img src="img/linkedin.png"></a></li>
+            </ul>
+            <br><br>
+        </div>
+    </div>
+  
+    
+        <script src="wow.min.js"></script>
     <script>
     wow = new WOW(
       {
@@ -177,5 +187,5 @@
     wow.init();	
         
     </script>
-    
-</body>
+    </body>
+</html>
