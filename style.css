@@ -41,7 +41,7 @@
 	letter-spacing: 1.5px;
 	z-index: 66666;
     right: 20px;
-    top: 250px;
+    top: 200px;
 }
 
 .navigation ul {
@@ -171,5 +171,32 @@ header ul li a:hover {
 	right: 30px;
     margin: 0; 
     padding: 0; 
+}
+
+
+#about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 999999999999;
+  display: none; }
+
+#about2 {
+  position: fixed;
+  left: -100%;
+    width: 80%; 
+  height: 100%;
+    background-image: url(img/colorized-me.png); 
+    background-position: bottom right; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-color: white; 
+  z-index: 9999999999999;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s ease-in-out; 
 }
 
