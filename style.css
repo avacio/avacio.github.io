@@ -18,6 +18,7 @@ element.style {
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    background-color: white;
 }
 
 .introanimation {
@@ -72,7 +73,7 @@ body {
 
 
 .teaser_item img {
-	max-width:100%;
+	max-width: 100%;
     margin: 0; 
     padding: 0;
 	width: auto;
@@ -81,7 +82,7 @@ body {
 }
 
 .hover:hover {
-    opacity: 0;
+    opacity: 10%;
 }
 
 .teaser_item:hover {
