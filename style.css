@@ -1,68 +1,89 @@
-html,body {
-    background: url(img/bg-orig.jpg) no-repeat center -80px fixed;
-/*    font-family: 'Helvetica Neue', 'Helvetica Neue', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
 
-}
-
-
-.navbar {
-/*
-    background-image: url("img/header.png");
-    position: fixed;  Set the navbar to fixed position 
-    font-family: 'Helvetica Neue', 'Helvetica Neue', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-*/
-    position: fixed; 
-    display: inline;
-    margin-top: 18px;
+element.style {
+    visibility: visible;
+    animation-name: fadeInUp;
 }
 
 /*
-#name{
-    text-shadow: 4px 4px 4px #aaa;
-    font-size: 25px;
-    display: inline;
-}
-*/
 
-.header {
-/*    background-image: url("img/header.png");*/
-/*    margin-top: 50px;*/
-}
-
-.verticalLine {
-  border-left: thick solid #000000;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-ul li{
-  display: inline;
-}
-
-#wrap {
-   width:100%;
-   margin: 0 auto;
-}
-#left_col {
-   float:left;
-   width:30%;
-    position: fixed;
-
-}
-#right_col {
-   float:right;
-   width:70%;
+   #first {
+        display: none; 
+    }
     
+    #loop {
+        display: block;
+    }
+*/
 
-}
-
-#about {
+body {
     text-align: center;
-/*    padding-left: 40px;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.introanimation {
+    margin: auto;
+    padding-top: 3%;
+    position: absolute;
+    visibility: visible;
+    display: none;
+    vertical-align: middle;
+}
+
+.introanimation img {
+    margin-left: auto; 
+    margin-right: auto;
+    height: 100%;
+}
+
+.animation img {
+    margin-left: auto; 
+    margin-right: auto;
+    height: 100%;
+}
+
+.animation {
+    display: block;
+    vertical-align: middle;
+    margin: auto;
+    padding-top: 3%;
+    position: relative;
+   
+}
+
+.work_container {
+	padding: 190px 0px 0px 0px;
+    margin: 0; 
+    margin-right: 0;
+    padding-right: 0;
+	height: auto;
+	position: relative;
+    width: 100%;
+    z-index: 3;
+}
+
+.teaser_item {
+	width: calc(33.33% - 44px);
+	margin: 0 22px 44px 22px;
+	height: auto;
+	float: left;
+	position: relative;
+    z-index: -1;
 }
 
 
+.teaser_item img {
+	max-width:100%;
+    margin: 0; 
+    padding: 0;
+	width: auto;
+    position: relative; 
+    z-index: 3;
+}
 
+.hover:hover {
+    opacity: 0;
+}
+
+.teaser_item:hover {
+    background-color: whitesmoke;
+}

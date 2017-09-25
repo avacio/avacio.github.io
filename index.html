@@ -7,18 +7,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 <!-- CUSTOM CSS -->
 <link href="style.css" rel="stylesheet">
+<link href="animate.css" rel="stylesheet" type="text/css">
+<!--<link rel="icon" href="img/logo.png">-->
 
 <!-- CUSTOM FONTS -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -28,32 +20,40 @@
 <title>Alexis Gervacio</title>
     </head>
 
+<script type="text/javascript" src="functions.js"></script>
+<script>
+		$(document).ready(function(){
+
+			var quotes = $(".quotes");
+			var quoteIndex = -1;
+			
+			function showNextQuote() {
+				++quoteIndex;
+				quotes.eq(quoteIndex % quotes.length)
+					.fadeIn(500)
+					.delay(4000)
+					.fadeOut(500, showNextQuote);
+			}
+			showNextQuote();
+		});
+	</script> 
+        
+<script type="text/javascript">
+    $(document).ready( function() {
+            
+        setTimeout(function() {
+            document.getElementById('first').style.display='none'
+        }, 4.5*1000)
+        
+        setTimeout(function() {
+            document.getElementById('loop').style.display='block'
+        }, 4.5*1000)  
+        
+    });
+    </script>
     <!-- Navigation -->
 
 <!--
-    <nav class="navbar navbar-light bg-light">
-        <div class="col-sm-4">
-  <span class="h1" class="navbar-brand mb-0">alexis gervacio</span>
-
-        </div>
-            <div class="col-sm-8">
-            <ul class="nav navbar-nav navbar-left">
-                <a href="resume.pdf" >résumé</a>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                <a href="https://3hoursahead.wordpress.com/"> blog </a>
-                &nbsp|&nbsp
-                
-                <a href="https://soundcloud.com/alexis-gervacio"> music </a>
-                &nbsp|&nbsp
-                
-                <a href="https://www.instagram.com/tyrannosrs_lex/"> instagram </a>
-        </ul>   
-            </div>
-        
-    </nav>
--->
-
 <nav class="navbar navbar-light bg-light">
        
   <span class="h1" class="navbar-brand mb-0">alexis gervacio</span>
@@ -75,92 +75,108 @@
         
         
     </nav>
+-->
 
-
-<!-- Header -->
-<header class ="header">
-
+<header>
+<!--        <span id="logo" class="scroll"><a href="http://fionayang.me"><img href="index.html" src="img/logo.png"></a></span>-->
 </header>
+
+<!-- Animations -->
+    <div class ="main">
+
+        <div class="introanimation">
+            <div class="animation font_color wow fadeInUp" id="first">
+                <img src="img/animated-header.gif">
+            </div>
+        </div>
+
+        <div class="animation">
+            <div class="animation font_color wow fadeInUp" id="loop">
+                <img src="img/animated-header-loop.gif">
+            </div>
+        </div>
+        </div>
 
 
 <body>
-   
-    <div id="wrap">
-    <div id="left_col"> 
+   <div class="work_container" id="work">
+        <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<!--            <a href= "img/abc.html" class="fadeOutLink">-->
+            <div class="text">
+                <h1>filler project</h1>
+                <p>bonjour</p>
+            </div>
+            <img class="hover" src="img/square-filler-project.png">
+<!--            </a>-->
+        </div>
+        
+        <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<!--            <a href= "img/abc.html" class="fadeOutLink">-->
+            <div class="text">
+                <h1>Personal Brand</h1>
+                <p>My Website</p>
+            </div>
+            <img class="hover" src="img/square-filler-project.png">
+<!--            </a>-->
+        </div>
+        
+                <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<!--            <a href= "img/abc.html" class="fadeOutLink">-->
+            <div class="text">
+                <h1>filler project</h1>
+                <p>hola</p>
+            </div>
+            <img class="hover" src="img/square-filler-project.png">
+<!--            </a>-->
+        </div>
+        
+               <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<!--            <a href= "img/abc.html" class="fadeOutLink">-->
+            <div class="text">
+                <h1>filler project</h1>
+                <p>konichiwa</p>
+            </div>
+            <img class="hover" src="img/square-filler-project.png">
+<!--            </a>-->
+        </div>
+       
+               <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<!--            <a href= "img/abc.html" class="fadeOutLink">-->
+            <div class="text">
+                <h1>filler project</h1>
+                <p>kamusta ka</p>
+            </div>
+            <img class="hover" src="img/square-filler-project.png">
+<!--            </a>-->
+        </div>
+        
+             <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<!--            <a href= "img/abc.html" class="fadeOutLink">-->
+            <div class="text">
+                <h1>filler project</h1>
+                <p>ni hao</p>
+            </div>
+            <img class="hover" src="img/square-filler-project.png">
+<!--            </a>-->
+        </div>
+        
+        <br clear="all">
+    </div>
     
-    <!-- About-->
-    <section id="about">
-        <img src="/img/me.png" alt="Me" style="width:190px">
-            <h3>Computer Science Student @ UBC</h3>
-            
-                 
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:lexigerv@gmail.com">lexigerv@gmail.com</a>
-                        </li>
-                        <li>
-                        <a href="https://github.com/avacio"> github </a></li>
-                        <li>
-                        <a href="https://www.linkedin.com/in/alexisgervacio/"> linkedin </a></li>
-                    </ul>
-        
-    </section>
-        </div>
-      
-    <div id="right_col">
+    <script src="wow.min.js"></script>
     
-    <!-- Projects-->
-        <div class="verticalLine">
-    <section id="projects">
-       <div class="carousel-item">
-  <img src="img/filler-project.png" alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h3>filler project</h3>
-    <p>...</p>
-  </div>
-</div>
-        <div class="carousel-item">
-  <img src="img/filler-project.png" alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h3>filler project</h3>
-    <p>...</p>
-  </div>
-</div>
-        <div class="carousel-item">
-  <img src="img/filler-project.png" alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h3>filler project</h3>
-    <p>...</p>
-  </div>
-</div>
+    <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       70,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();	
         
-        <div class="carousel-item">
-  <img src="img/filler-project.png" alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h3>filler project</h3>
-    <p>...</p>
-  </div>
-</div>
-        
-        <div class="carousel-item">
-  <img src="img/filler-project.png" alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h3>filler project</h3>
-    <p>...</p>
-  </div>
-</div>
-        
-        <div class="carousel-item">
-  <img src="img/filler-project.png" alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h3>filler project</h3>
-    <p>...</p>
-  </div>
-</div>
-        
-    </section>
-            
-        </div>
-</div>
-        
-        </div>
+    </script>
+    
 </body>
