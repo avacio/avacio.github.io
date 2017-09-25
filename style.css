@@ -18,6 +18,7 @@ element.style {
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    background-color: white;
 }
 
 .introanimation {
