@@ -174,7 +174,6 @@ header ul li a:hover {
 }
 
 
-/*
 #about {
   position: fixed;
   top: 0;
@@ -184,15 +183,14 @@ header ul li a:hover {
   background: rgba(255, 255, 255, 0.9);
   z-index: 999999999999;
   display: none; }
-*/
 
-#about {
+#about2 {
   position: fixed;
   left: -100%;
     width: 80%; 
   height: 100%;
     background-image: url(img/colorized-me.png); 
-    background-position: bottom right; 
+    background-position: right; 
     background-repeat: no-repeat; 
     background-size: contain; 
     background-color: white; 
@@ -202,7 +200,11 @@ header ul li a:hover {
   transition: all 1s ease-in-out; 
 }
 
-/*
+#about p {
+    font-family: 'Lato Light', sans-serif;
+    text-align: left;
+}
+
 #music {
   position: fixed;
   top: 0;
@@ -212,15 +214,13 @@ header ul li a:hover {
   background: rgba(255, 255, 255, 0.9);
   z-index: 999999999999;
   display: none; }
-*/
 
-#music {
+#music2 {
   position: fixed;
   left: -100%;
     width: 80%; 
   height: 100%;
-/*    background-image: url(img/colorized-me.png); */
-    background-position: bottom right; 
+    background-position: right; 
     background-repeat: no-repeat; 
     background-size: contain; 
     background-color: white; 
@@ -230,3 +230,9 @@ header ul li a:hover {
   transition: all 1s ease-in-out; 
 }
 
+#music p {
+    font-family: 'Lato Light', sans-serif;
+    text-align: left;
+}
+.active {
+  left: 0 !important; }
