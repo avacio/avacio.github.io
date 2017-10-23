@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"> 
-  </head>
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- CUSTOM CSS -->
-<link href="style.css" rel="stylesheet">
-<link href="animate.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="img/shuffle-logo.png">
-
-<!-- CUSTOM FONTS -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
-<head>
-<title>Alexis Gervacio</title>
-    </head>
-
-<script type="text/javascript" src="functions.js"></script>
-<script>
+	<title>Alexis Gervacio</title>  
+    
+	<meta name="keywords" content="design, Vancouver, interaction, userexperience, userinterface, logo, branding, mobileappdesign, branding">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Interaction Designer in Vancouver, Canada">
+            
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="animate.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/logo.png">
+   
+	<script async="" src="analytics.js"></script><script type="text/javascript" src="jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    
+    <script>
 		$(document).ready(function(){
 
 			var quotes = $(".quotes");
@@ -31,36 +23,43 @@
 				++quoteIndex;
 				quotes.eq(quoteIndex % quotes.length)
 					.fadeIn(500)
-					.delay(5)
-					.fadeOut(500, showNextQuote);
+					.delay(1000)
+					.fadeOut(700, showNextQuote);
 			}
 			showNextQuote();
-		});
+		})();
 	</script> 
-        
-<script type="text/javascript">
+        <script type="text/javascript">
     $(document).ready( function() {
             
         setTimeout(function() {
             document.getElementById('first').style.display='none'
-        }, 4.5*1000)
+        }, 9*1000)
         
         setTimeout(function() {
             document.getElementById('loop').style.display='block'
-        }, 4.5*1000)  
+        }, 9*1000)  
         
     });
     </script>
+</head>
+    
+    
+<body id="top" cz-shortcut-listen="true">
+<div id="body" style="background-color: #FFFFFF">
+<a id="contact" style="position: absolute; bottom: 0px; left:0;"></a>
 
 <header>
-        <span id="logo" class="scroll"><a href="https://avacio.github.io/#home"><img href="index.html" src="img/shuffle-logo.png"></a></span>
+        <span id="logo" class="scroll"><a href="https://avacio.github.io/#home"><img href="index.html" src="img/logo.png"></a></span>
 </header>
     
-<div id="about-bg"></div>
-    <div class="about" id="about2">
-            <h1>Ahoy!</h1>
+    
+    <div id="about-bg"></div>
+        <div id="about2">
+           <h1>Ahoy!</h1>
+
             <p>You have reached Alexis, and on paper I am a Computer Science student studying at the University of British Columbia. In real life, however, I have a much more difficult time labelling myself.
-                <br>
+                <br><br>
                 I'm 1/3 of the indie-folk group, <i>The Calliopes</i>, and also a solo artist, <i>Alexis the Artless</i>. I'm a theatre kid who will never get tired of the drama, and after a brief stint in the English Honours program, I have finally found my way over to the techy side, because I heard they have cookies (get it, like browser cookies).
                 <br><br>
                 Anyways, as a wise instagrammer (@bymariandrew) once said, "leading a passionate life doesn't mean finding ONE THING that is the center of your life", because WE are the centers of our lives, and "all our interests and curiosities can float around us like good company and consistent friends". For me, some of these passions can be seen in the opening animation.
@@ -70,42 +69,64 @@
             <p>Interested in working together? <a href="mailto:lexigerv@gmail.com" target="_blank">Give me a holler!</a></p>
     </div>
     
-       <div class="music" id="music">
+    
+    <div id="music-bg"></div>
+     <div id="music2">
             <h1>The Calliopes</h1>
-            <p>Yes, we are named after Callie from <i>Grey's Anatomy</i>, and yes, I mistakenly pronounced it as CA-LEE-OPES for a whole week until I realized.</p>
-            <iframe width="420" height="236" src="https://www.youtube.com/embed/bZnPZb7I05I" frameborder="0" allowfullscreen></iframe>
-             <br><br>
+            <p>Yes, we are named after Callie from <i>Grey's Anatomy</i>, and yes, I mistakenly pronounced it as CA-LEE-OPES for a whole week until I realized. (In case you were wondering, it's actually meant to be CAL-EYE-OPE-EES.)</p>
+         <br>
+            <iframe width="365" height="205" src="https://www.youtube.com/embed/bZnPZb7I05I" frameborder="0" allowfullscreen></iframe>
+    
+         <div id="col2">
              <h1>Alexis the Artless</h1>
             <p>I tried to put my name in the Wu Tang name generator to get a name like Childish Gambino, but instead I got "Misunderstood Lover". So, I didn't pick that. But perhaps in another world.</p>
+             <br>
                 <iframe width="420" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/355273622&amp;color=%23b34d49&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+         </div>
     </div>
     
-<!-- Animations -->
-<div class ="main" id="home">
+	<div class="main">
+        
+        <div class="biganimation">
 
-        <div class="introanimation">
             <div class="animation font_color wow fadeInUp" id="first">
-                <img src="img/animated-header.gif">
+                <img src="img/FinalIteration.gif">
             </div>
-
+        
             <div class="animation" id="loop">
-                <img src="img/animated-header-loop.gif">
+                <img src="img/Loop.gif">
             </div>
         </div>
     
-    <div class="navigation">
-         <ul>
-                <li><a class="scroll" href="#work">Portfolio</a></li>
-             <li><a class="scroll" id="about-link" href="#about">About Me</a></li>
-             <li><a class="scroll" id="music-link" href="#music">Music</a></li>
-             <li><a href="resume.pdf">résumé</a></li>
-                <li><a class="scroll" href="#contact">Contact</a></li>
-            </ul>
+
+
+         <div class="aboutme">
+         	<a class="scroll" id="about-link" href="#about">About Me</a>
+         </div>
+        
+         <div class="musicbutton">
+         	<a class="scroll" id="music-link" href="#music">Music</a>
+         </div>
+                 
+<!--
+         <div class="portfolio_link" style="color: rgb(30,30,30);">
+         	<a class="font_color scroll" href="#work" style="color: rgb(30, 30, 30);">Portfolio</a>
+         </div>
+-->
+         
+        <div class="img__wrap">
+         <a class="scroll" href="#work"><img class="laptopButton" img src="img/laptop-icon-2.png"
+onmouseover="this.src='img/laptop-icon-2.png'"
+onmouseout="this.src='img/blank.png'"
+border="0" alt=""/>
+  <p>Portfolio</p></a>
         </div>
+        
+		 <div class="contact_link">
+         	<a class="scroll" href="#contact">Contact</a>
+         </div>
     </div>
 
-<body>
-    
     
    <div class="work_container" id="work">
         <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
@@ -117,7 +138,7 @@
             <img class="hover" src="img/square-filler-project.png">
 <!--            </a>-->
         </div>
-        
+
         <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 <!--            <a href= "img/abc.html" class="fadeOutLink">-->
             <div class="text">
@@ -127,7 +148,7 @@
             <img class="hover" src="img/square-filler-project.png">
 <!--            </a>-->
         </div>
-        
+
                 <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 <!--            <a href= "img/abc.html" class="fadeOutLink">-->
             <div class="text">
@@ -137,7 +158,7 @@
             <img class="hover" src="img/square-filler-project.png">
 <!--            </a>-->
         </div>
-        
+
                <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 <!--            <a href= "img/abc.html" class="fadeOutLink">-->
             <div class="text">
@@ -147,7 +168,7 @@
             <img class="hover" src="img/square-filler-project.png">
 <!--            </a>-->
         </div>
-       
+
                <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 <!--            <a href= "img/abc.html" class="fadeOutLink">-->
             <div class="text">
@@ -157,7 +178,7 @@
             <img class="hover" src="img/square-filler-project.png">
 <!--            </a>-->
         </div>
-        
+
              <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 <!--            <a href= "img/abc.html" class="fadeOutLink">-->
             <div class="text">
@@ -170,11 +191,16 @@
         <br clear="all">
        <br><br><br>
     </div>
-    
-        <div class="contact_container" id="contact">
-        <br>
-            <h1><font color = white>Blah blah</font></h1>
-        <p>Bloo bloo</p>
+    <br clear="all"><br><br>
+	    </div>
+	    <br clear="all">
+      
+
+    <div class="contact_container">
+        <br><br><br>
+        
+            <h1><font color = white>Let's get an ice capp!</font></h1>
+        <p>Or tea, if that's your thing. Either way, I'd love to hear from you!</p>
             <ul>
                 <li><a href="mailto:lexigerv@gmail.com" target="_blank"><img src="img/mail.png"></a></li>
                 <li><a href="https://www.instagram.com/tyrannosrs_lex/" target="_blank"><img src="img/instagram.png"></a></li>
@@ -184,9 +210,10 @@
             </ul>
             <br>
     </div>
-  
+
+	<script src="wow.min.js"></script>
     
-        <script src="wow.min.js">
+    <script>
     wow = new WOW(
       {
         animateClass: 'animated',
@@ -201,3 +228,4 @@
     </script>
     </body>
 </html>
+

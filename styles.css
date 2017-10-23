@@ -1,0 +1,976 @@
+@font-face {
+    font-family: ProximaNova; 
+    src: url('fonts/ProximaNova.otf')
+}
+
+@font-face {
+    font-family: OverpassLight; 
+    src: url('fonts/OverpassLight.ttf')
+}
+
+@font-face {
+    font-family: OverpassRegular; 
+    src: url('fonts/OverpassRegular.ttf')
+}
+
+@font-face {
+    font-family: Didot; 
+    src: url('fonts/Didot.ttf')
+}
+
+.biganimation {
+    width: 100%;
+}
+
+.description img {
+    width: 35px; 
+    padding-top: 20px;
+}
+
+.description {
+    padding-top: 3%;
+}
+
+.contact_container h3 {
+	font-family: 'ProximaNova';
+    text-transform: uppercase; 
+	font-size: 15px;
+    padding-top: 5px; 
+	color: #000;
+	letter-spacing: 1.6px;   
+}
+
+#wrapper {
+    padding-top: 0px;
+}
+
+
+#about-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 999999999999;
+  display: none; }
+
+#about2 {
+  position: fixed;
+  left: -100%;
+    width: 90%; 
+  height: 100%;
+    background-image: url(img/color-me.png); 
+    background-position: right; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-color: white; 
+  z-index: 9999999999999;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s ease-in-out; 
+}
+
+#about2 h1 {
+    font-family: 'Didot'; 
+    font-size: 3em; 
+    font-weight: 200; 
+    text-align: left; 
+    margin-left: 9%;
+    margin-top: 8%;
+}
+
+#about2 p {
+    font-family: 'OverpassLight'; 
+    font-size: 1em; 
+    text-align: left; 
+    margin: 0 0 0 9%;
+/*    padding: 0 50% 0 0; */
+    line-height: 25px;
+    line-height: 1.3em;
+    width: 55%;
+}
+
+#music-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 999999999999;
+  display: none; }
+
+#music2 {
+  position: fixed;
+  left: -100%;
+    width: 90%; 
+  height: 100%;
+    background-image: url(img/just-brick.jpg); 
+    background-position: right; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-color: white; 
+  z-index: 9999999999999;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s ease-in-out; 
+}
+
+#music2 h1 {
+    font-family: 'Didot'; 
+    font-size: 2em; 
+    font-weight: 200; 
+    text-align: center; 
+    margin-left: 9%;
+    margin-top: 15%;
+    width: 30%;
+}
+
+#music2 p {
+    font-family: 'OverpassLight'; 
+    font-size: 1em; 
+    text-align: center; 
+    margin: 0 0 0 9%;
+/*    padding: 0 50% 0 0; */
+    line-height: 25px;
+    line-height: 1.3em;
+    width: 30%;
+}
+
+iframe {
+    margin-left: -53%;
+}
+
+#col2 {
+    margin-left: 50%;
+    margin-top: -50%;
+    width: 100%;
+}
+
+.contact_container h1 {
+    font-family: 'Didot'; 
+    font-size: 3em; 
+    font-weight: 200; 
+    text-align: center; 
+    margin: auto;
+    width: 100%;
+    padding-top: 10vh; 
+}
+
+.contact_container p {
+    font-family: 'OverpassLight'; 
+    font-size: 1em; 
+    text-align: center; 
+    margin: auto; 
+    width: 100%;
+    padding-top: 2vh;
+    line-height: 20px;
+    padding-bottom: 2vh;
+}
+
+
+.contact_container h4 {
+	position: fixed;
+	font-family: 'ProximaNova';
+    text-transform: uppercase; 
+	font-size: 15px;
+	color: #000;
+	letter-spacing: 1.2px;   
+    bottom: 35px;
+	right: 30px;
+    margin: 0; 
+    padding: 0; 
+}
+
+#email {
+    font-weight: 900;
+    border-bottom: 2px solid black;
+}
+
+#logo img {
+    width: 40px; 
+    position: absolute; 
+    left: 30px; 
+    top: 30px; 
+}
+
+.animation {
+/*
+    top: 25%;
+    left: 25%;  
+*/
+    vertical-align: middle; 
+    position: absolute; 
+    height: 70%;
+/*    width: 100%;*/
+    padding: 6% 12% 0 12%;
+/*    margin: -25px 0px 0px -25px;*/
+}
+
+.animation img {
+    margin-left: auto; 
+    margin-right: auto;
+/*    height: 100%;*/
+}
+
+#loop {
+    display: none;
+}
+
+h7 {
+    font-size: 3em; 
+    font-family: 'Didot';
+    letter-spacing: 3px; 
+    text-align: center; 
+    font-weight: 300;
+    margin: 5px; 
+    
+}
+
+p {
+    font-size: 2em; 
+    font-family: 'OverpassLight'; 
+    display: block;
+    margin: 10%; 
+    line-height: 20px; 
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+	text-decoration: none;
+	color: #b34d49;
+}
+
+.active2 {
+	border-bottom: 1px solid #000;
+}
+
+body {
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position:relative;
+}
+
+#body {
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	position: relative;
+	background: rgba(30,30,30,1.00);
+	z-index: 999999;
+    margin: 0;
+    padding: 0;
+	margin-bottom: 400px;
+}
+
+.wrapper {
+	height: 100%;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+
+header {
+	height: 114px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: 999999;
+	/*background: rgba(255, 255, 255, 0.96);*/
+}
+
+
+.contact_link {
+	display: block;
+    position: absolute;
+    padding: 0; 
+    margin: 0; 
+	font-family: 'ProximaNova';
+    text-transform: uppercase; 
+	font-size: 15px;
+	bottom: 35px;
+	right: 49px;
+	text-align: right;
+	color: #000;
+	letter-spacing: 1.2px;
+	z-index: 66666;
+}
+
+.contact_link a {
+	color: #000;
+}
+
+.contact_link a:hover {
+	border-bottom: 5px solid #b34d49;
+}
+
+/*
+.portfolio_link {
+	position: absolute;
+	top: 44%;
+	left: 20%;
+    text-align: right;
+	font-family: 'ProximaNova';
+    text-transform: uppercase; 
+	font-size: 15px;
+	z-index: 99999;
+	height: 20px;
+	letter-spacing: 1.2px;
+}
+*/
+
+.img__wrap {
+    display: block;
+    visibility: visible;
+    z-index: 99999999;
+}
+.img__wrap p {
+    visibility: hidden;
+    position:absolute;
+    font-family: 'Lato Light', sans-serif;
+    text-transform: uppercase;
+	font-size: 17px;
+    letter-spacing: 1.5px;
+}
+.img__wrap:hover p {
+    visibility: visible;
+    left: 11.5%;
+    top: 16%;
+}
+.img__wrap:active p {
+   color: #b34d49;
+}
+.laptopButton {
+  cursor: pointer;
+  position: absolute;
+    width: 6%;
+     left: 22.5%;
+    top: 36.45%;
+z-index: 99999999;}
+
+/*
+.portfolio_link a {
+	color: #000;
+}
+
+.portfolio_link a:hover {
+	border-bottom: 5px solid #b34d49;
+}
+*/
+
+.aboutme {
+    display: block;
+	position: fixed;
+	bottom: 35px;
+	left: 49px;
+	font-family: 'ProximaNova';
+    text-transform: uppercase;
+	font-size: 15px;
+	z-index: 9999999999999999;
+	width: 3px;
+	height: 20px;
+	letter-spacing: 1.2px;
+	text-align: left;
+}
+
+.aboutme a:hover {
+	border-bottom: 5px solid #FAED22;
+}
+
+
+.musicbutton {
+    display: block;
+	position: fixed;
+	top: 35px;
+	left: 49px;
+	font-family: 'ProximaNova';
+    text-transform: uppercase;
+	font-size: 15px;
+	z-index: 9999999999999999;
+	width: 3px;
+	height: 20px;
+	letter-spacing: 1.2px;
+	text-align: left;
+}
+
+.musicbutton a:hover {
+	border-bottom: 5px solid #FAED22;
+}
+header ul {
+	display: block;
+	position: absolute;
+	font-family: 'ProximaNova';
+    text-transform: uppercase; 
+	font-size: 15px;
+	top: 30px;
+	right: 50px;
+	height: 20px;
+}
+
+header ul li {
+	float: left;
+	list-style-type: none;
+	margin-left: 125px;
+	letter-spacing: 1.2px;
+}
+
+.active {
+  left: 0 !important; }
+
+header ul li a:link,
+header ul li a:visited,
+header ul li a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+header ul li a:hover {
+	border-bottom: 5px solid #b34d49;
+}
+
+.navi_fade {
+	display: none;
+}
+
+.work_container {
+	padding: 190px 0px 50px 0px;
+    margin: 0;
+    margin-right: 0;
+    padding-right: 0;
+	height: auto;
+	position: relative;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+}
+
+
+.work_container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  width: 100%;
+  height: 55px;
+  background: linear-gradient( 45deg, #b34d49 50%, transparent 50%) 0 0,
+              linear-gradient(-45deg, #b34d49 50%, transparent 50%) 0 0;
+  background-size: 100px 100px;
+    margin-bottom: -40px;
+}
+
+.teaser_item {
+	width: calc(33.33% - 44px);
+	margin: 0 22px 44px 22px;
+	height: auto;
+	float: left;
+	position: relative;
+    z-index: 2;
+}
+
+
+.teaser_item img {
+	max-width: 100%;
+    margin: 0;
+    padding: 0;
+	width: auto;
+    position: relative;
+    z-index: 3;
+}
+
+.hover:hover {
+    opacity: 10%;
+}
+
+.teaser_item:hover {
+    background-color: whitesmoke;
+}
+
+.teaser_item {
+	width: calc(33.33% - 44px);
+	margin: 0 22px 44px 22px;
+	height: auto;
+	float: left;
+	position: relative;
+    z-index: -1;
+}
+
+
+.teaser_item img {
+	max-width:100%;
+    margin: 0; 
+    padding: 0;
+	width: auto;
+    position: relative; 
+    z-index: 3;
+}
+
+.hover:hover {
+    opacity: 0;
+}
+
+.teaser_item:hover {
+    background-color: whitesmoke;
+}
+
+
+.text {
+    position: absolute; 
+    top: 40%;
+    left: 0; 
+    width: 100%;
+    text-align: center; 
+    z-index: 2;
+    padding: 0; 
+    margin: 0; 
+}
+
+.text h1 {
+    font-family: 'Didot'; 
+    font-size: 1.8em;
+    font-weight: 300; 
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 0; 
+    margin: 0; 
+}
+
+.text p {
+    font-family: 'ProximaNova'; 
+    font-size: 0.9em; 
+    text-transform: uppercase; 
+    letter-spacing: 1.2px;
+    padding-top: 0.5vh;
+    margin-top: 0;
+    padding: 0; 
+    margin: 0; 
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contact_container {
+	position: fixed !important;
+	z-index:-1;
+	height: 600 px;
+    width: 100%;
+    background-color: #b34d49;
+    left:0;
+	bottom:0;
+	margin:0;
+	padding:0;
+    top: 40%;
+}
+
+.contact_container ul {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+.contact_container ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+
+.contact_container ul img {
+    width: 30px;
+    height: auto;
+}
+
+.contact_container h4 {
+	position: fixed;
+    text-transform: uppercase;
+	font-size: 15px;
+	color: #000;
+	letter-spacing: 1.2px;
+    bottom: 35px;
+	right: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .aboutme {
+        bottom: 15px;
+        left: 20px;
+    }
+    
+    .musicbutton {
+        bottom: 15px;
+        left: 20px;
+    }
+    
+    #logo img {
+        top: 15px;
+        left: 20px;
+    }
+    
+    .contact_link {
+        right: 20px; 
+        bottom: 15px;
+    }
+    
+    .portfolio_link {
+        top: 15px;
+        right: 20px;
+    }
+    
+    #first {
+        display: none; 
+    }
+    
+    #loop {
+        display: block;
+    }
+    
+    .biganimation {
+        width: 100%;
+    }
+    
+    .animation img {
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
+        padding: 0; 
+        position: relative; 
+    }
+        
+    .animation {
+        width: 100%;
+        vertical-align: middle; 
+        margin: 0; 
+        padding: 0; 
+        padding-top: 30%;
+        position: relative; 
+        height: auto; 
+    }
+    
+    #body {
+        margin-bottom: 300px;
+    }
+        
+    .contact_container {
+        height: 300px;
+        width: 100%;
+    }
+        
+    .description {
+        margin-top: 20%;
+        padding: 0; 
+    }
+        
+    .contact_container h1 {
+        font-size: 1.5em;
+        margin: 0; 
+        padding: 0; 
+            
+    }
+        .contact_container p {
+            font-size: 0.8em; 
+            padding: 0px;
+            margin: auto; 
+            width: 60%;
+        }
+    
+    .contact_container ul {
+        padding-top: 2%;
+    }
+        
+        #about2, #music2 {
+            width: 100%;
+            
+        }
+        
+        #about2 h1, #music2 h1 {
+            font-size: 1.5em;  
+            margin-top: 20%; 
+        }
+    
+        #about2 p, #music2 p {
+            font-size: 0.8em; 
+            margin-right: 10%;
+        }
+        
+        #about2, #music2 {
+            background-size: cover;
+        }
+
+        
+        .teaser_item {
+            width: calc(100% - 40px);
+            margin: 0 20px 20px 20px;
+            padding: 0;
+        }
+    
+        .hover:hover {
+        opacity: 1;
+        }
+
+        .text {
+            display: none;
+        }
+        
+        .work_container {
+            width: 100%;
+        }
+    
+        .contact_container h4 {
+            display: none;
+        }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .aboutme {
+        bottom: 15px;
+        left: 20px;
+    }
+    .musicbutton {
+        bottom: 15px;
+        left: 20px;
+    }
+    
+    #logo img {
+        top: 15px;
+        left: 20px;
+    }
+    
+    .contact_link {
+        right: 20px; 
+        bottom: 15px;
+    }
+    
+    .portfolio_link {
+        top: 15px;
+        right: 20px;
+    }
+    
+    #first {
+        display: none; 
+    }
+    
+    #loop {
+        display: block;
+    }
+    
+    .biganimation {
+        width: 100%;
+        padding-top: 15%;
+    }
+    
+    .animation img {
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
+        padding: 0; 
+        position: relative; 
+    }
+        
+    .animation {
+        width: 100%;
+        display: block;
+        vertical-align: middle; 
+        margin: 0; 
+        margin: auto;
+        padding: 0; 
+        position: relative; 
+        height: auto; 
+    }
+    
+    #body {
+        margin-bottom: 300px;
+    }
+        
+    .contact_container {
+        height: 300px;
+        width: 100%;
+    }
+        
+    .description {
+        margin-top: 10%;
+        padding: 0; 
+    }
+        
+    .contact_container h1 {
+        font-size: 2em;
+        margin: 0; 
+        padding: 0; 
+            
+    }
+        .contact_container p {
+            font-size: 1em; 
+            padding: 0px;
+            padding-top: 5px;
+            margin: auto; 
+        }
+    
+    .contact_container ul {
+        padding-top: 2%;
+    }
+        
+        #about2, #music2 {
+            width: 100%;
+            background-size: cover;
+        }
+        
+        #about2 h1, #music2 h1 {
+            font-size: 2em;  
+            margin-top: 20%; 
+        }
+    
+        #about2 p, #music2 p {
+            font-size: 1em; 
+            margin-right: 10%;
+        }
+        
+        
+        .teaser_item {
+            width: calc(50% - 20px);
+            margin: 0 10px 20px 10px;
+            padding: 0;
+        }
+    
+        .hover:hover {
+        opacity: 1;
+        }
+
+        .text {
+            display: none;
+        }
+        
+        .work_container {
+            width: 100%;
+        }
+    
+        .contact_container h4 {
+            display: none;
+        }
+    
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+        .aboutme {
+        bottom: 15px;
+        left: 20px;
+    }
+    
+    .musicbutton {
+        bottom: 15px;
+        left: 20px;
+    }
+        .animation img {
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
+        padding: 0; 
+        position: relative; 
+    }
+        
+    .animation {
+        width: 70%;
+        vertical-align: middle; 
+        margin: 0; 
+        padding: 0; 
+        position: relative; 
+        height: auto; 
+        display: block; 
+        margin: auto;
+    }
+    
+    .biganimation {
+        width: 100%;
+    }
+        
+    .contact_container {
+        height: 300px;
+        width: 100%;
+    }
+        
+    .description {
+        margin-top: 10%;
+        padding: 0; 
+    }
+        
+    .contact_container h1 {
+        font-size: 2em;
+        margin: 0; 
+        padding: 0; 
+            
+    }
+        .contact_container p {
+            font-size: 1em; 
+            padding: 0px;
+            padding-top: 5px;
+            margin: auto; 
+        }
+    
+    .contact_container ul {
+        padding-top: 2%;
+    }
+        
+        #about2, #music2 {
+            width: 80%;
+            background-size: cover;
+        }
+        
+        #about2 h1, #music2 h1 {
+            font-size: 2em;  
+            margin-top: 20%; 
+        }
+    
+        #about2 p, #music2 p {
+            font-size: 1em; 
+            margin-right: 10%;
+        }
+    
+        .hover:hover {
+        opacity: 1;
+        }
+
+        .text {
+            display: none;
+        }
+        
+        .work_container {
+            width: 100%;
+        }
+    
+        .contact_container h4 {
+            display: none;
+        }
+    
+}
+
+/* Large desktop */
+@media (min-width: 1200px) and (max-width: 2000px) {
+    
+    
+}
+
+
+
+

@@ -5,8 +5,19 @@ var $document = $(document),
 $(document).ready(function() {
     $("#about-link").click(function(){
    	$("#about-bg").fadeToggle(1000);
-    $("#work-nav").fadeToggle(1000);
+    $("#work").fadeToggle(1000);
   	$("#about2").toggleClass("active");
+    $("body").toggleClass("body-active");
+    $("#contact").toggleClass("contact-active");
+  	$(this).text(function(i, text){
+      return text === "close x" ? "" : "close x";
+    });
+  });
+    
+
+    $("#music-link").click(function(){
+   	$("#music-bg").fadeToggle(1000);
+    $("#music2").toggleClass("active");
     $("body").toggleClass("body-active");
     $("#contact").toggleClass("contact-active");
   	$(this).text(function(i, text){
