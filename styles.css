@@ -420,13 +420,8 @@ header ul li a:hover {
     text-align: center; 
     font-weight: 300;
     margin:10px;
-/*    position: absolute;*/
-/*    line-height: 20px;*/
-/*    bottom:100px;*/
-/*
-    top:15px;
-    left:15px;
-*/
+    color: black;
+
 }
 
 
@@ -439,8 +434,6 @@ header ul li a:hover {
 	letter-spacing: 1.2px;   
     text-align: center;
     width: 100%;
-/*    line-height: 10px;*/
-/*    bottom:auto;*/
 }
 
 .dash {
