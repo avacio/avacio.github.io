@@ -12,10 +12,10 @@
     left: 10%;
     width: 25%;
     z-index: 55;
-    top:112px;
+    top:138px;
 }
 .about {
-    padding-top: 1%;
+    padding-top: 3%;
     position: absolute:
     display: block;
     width: 100%; 
@@ -23,7 +23,7 @@
     background-color: white; 
   flex-direction: column;
   justify-content: center;
-    margin-bottom: -650px;
+    margin-bottom: -660px;
 }
 
 .about h1 {
