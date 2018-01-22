@@ -1,10 +1,10 @@
 # avacio.github.io
-My personal branding and website.
+The personal branding and website of Alexis Gervacio!
 
 ## Logo
 ![Alt text](https://i.imgur.com/qwns5Sm.png) <br>
 Displaying a shuffle icon, my logo represents my life motto to constantly change it up! <br>
-There is so much already out there in the world, but that doesn't mean that everything is perfect and should stay static. Reality is dynamic, and I aim to add my own flavour to things, adapting and changing as the world around us evolves as well.
+There is so much already out there in the world, but that doesn't mean that everything is perfect and should stay static. Reality is dynamic, and I aim to add my own flavour to things, adapting and changing as the world around us evolves as well. Also, the shuffle icon looks like an X, which is kind of my thing, since I have one in my name.
 <br><br>
 My signature colour is **#b34d49**: a bold and daring red, but still flat enough to be classy. (I'd like to think this extends to my personality, as well.)
 
