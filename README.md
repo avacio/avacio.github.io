@@ -1,5 +1,6 @@
 # avacio.github.io
-The personal branding and website of Alexis Gervacio!
+The personal branding and website of Alexis Gervacio!<br>
+[Click here to be amazed.](https://avacio.github.io/) (Or at least, pleasantly surprised.)
 
 ## Logo
 ![Alt text](https://i.imgur.com/qwns5Sm.png) <br>
