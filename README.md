@@ -18,8 +18,8 @@ I don't know about you, but I think it looks sweet.
 <br><br>
 ## Opening Animation
 Using Adobe AfterEffects, I created my own opening animations to introduce new visitors to my site. <br>
-![Alt text](http://i.imgur.com/C0LPjlY.gif)
-![Alt text](http://i.imgur.com/6Uv98iC.gif)
+![Alt text](https://i.imgur.com/e4WsjLi.gif)
+![Alt text](https://i.imgur.com/Zb1vHtL.gif)
 <br>
 The first one is the tracing of a path through many of my personal interests. Like a treasure map, it eventually terminates with an "X" that marks the spot.
 Coincidentally, the shape resembles that of Canada... or a giant blob, depending on your perspective. After an iteration of this long GIF, I use Javascript to loop the second GIF of a pulsing X.
