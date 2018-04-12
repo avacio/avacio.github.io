@@ -276,7 +276,7 @@ header ul li a:hover {
 
 .text {
     position: absolute; 
-    top: 78%;
+    top: 85%;
     left: 0; 
     width: 100%;
     text-align: center; 
@@ -288,8 +288,8 @@ header ul li a:hover {
 
 .text p {
     font-family: 'Roboto', sans-serif; 
-    font-size: 2vw; 
-    text-transform: uppercase; 
+    font-size: 3vh; 
+/*    text-transform: uppercase; */
     letter-spacing: 1.2px;
     margin-top: 0;
     padding: 0; 
@@ -384,7 +384,7 @@ header ul li a:hover {
 .contact_container h4 {
 	position: fixed;
 	font-family: 'Lato';
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
 	font-size: 3em;
 	color: #000;
 	letter-spacing: 1.2px;   
