@@ -26,7 +26,7 @@
     margin-bottom: -660px;
 }
 
-.about h1 {
+.about h1, .resume h1 {
     font-family: 'Didot'; 
     font-size: 3em; 
     font-weight: 200; 
@@ -37,7 +37,11 @@
     width: 54.5%;
 }
 
-.about p {
+.resume h1 {
+    width: 83%;
+}
+
+.about p, .resume p {
     font-family: 'Roboto'; 
     font-size: 1.1em; 
     text-align: left;
@@ -46,6 +50,19 @@
     line-height: 25px;
     line-height: 1.3em;
     width: 55%;
+}
+
+.resume p {
+    width: 100%;
+}
+
+
+.resume {
+    padding-top: 3%;
+    position: absolute:
+    width: 100%; 
+/*    margin-left: 28%;*/
+    background-color: white; 
 }
 
 #music h1 {
