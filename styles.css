@@ -128,7 +128,7 @@ audio::-webkit-media-controls-panel {
   font-weight: 200; 
   text-align: left; 
   margin-left: 9%;
-  padding-top: 5%;
+  padding-top: 9%;
   width: 83%;
   color: #b34d49;
   border-bottom: 10px solid #b34d49;
@@ -279,8 +279,8 @@ header ul li a:hover {
   text-decoration: none;}
 
 .work_container {
-  /*  margin: 150px 0 0 0;*/
-/*  margin: 10% 0 0 0;*/
+  /*    margin: 150px 0 0 0;*/
+  /*  margin: 10% 0 0 0;*/
   /*
   margin-left: 9%;
   margin-right: 9%;
@@ -289,41 +289,47 @@ header ul li a:hover {
   margin-right: 0;
   */
 
-/*  height: auto;*/
-/*  position: absolute;*/
-  position: relative;
-  margin: auto;
-  width: 100%;
+  /*  height: auto;*/
+  /*    position: absolute;*/
+  /*  padding: 20%;*/
+  margin-left: 17%;
+  margin-right: 17%;
+  /*  margin-right: 9%;*/
+  /*  position: relative;*/
+  /*    margin: auto;*/
+  /*  width: 100%;*/
   z-index: 3;
   background-color: white;
 }
 
 .teaser_item img {
   max-width: 100%;
-  margin: 0;
+  /*  margin: 0;*/
   padding: 0;
   position: relative;
-  z-index: 7;
+  /*  z-index: 7;*/
 }
 
 .teaser_item img:hover {
-  z-index: 1;
+  /*  z-index: 1;*/
 }
-
-/*
-.hover:hover {
-opacity: 50%;
-}
-*/
 
 .teaser_item {
-  width: calc(33.33% - 44px);
-  margin: 0 22px 44px 22px;
+  /*  width: calc(33.33% - 44px);*/
+  width: 15%;
+  margin: 10% 5%; 10% 5%;
+  /*  margin: 44px 33px 44px 33px;*/
+  /*  padding: 10%;*/
   height: auto;
   float: left;
   position: relative;
   z-index: 5;
   /*    opacity: 0.92;*/
+}
+
+
+.hover:hover {
+  opacity: 50%;
 }
 
 .text {
@@ -340,13 +346,23 @@ opacity: 50%;
 
 .text p {
   font-family: 'Roboto', sans-serif; 
-  font-size: 3vh; 
+  font-size: 1.5vw; 
+  /*  line-height: 15px; */
+  line-height: 30px; 
+  font-weight: 400; 
+  text-align: left;
   /*    text-transform: uppercase; */
   letter-spacing: 1.2px;
-  margin-top: 0;
-  padding: 0; 
-  margin: 0;
+  /*  margin-top: 0;*/
+  /*  margin-right: -30%;*/
+  /*  padding: 0; */
+  /*  margin: 0;*/
   color: white;
+  /*  color: black;*/
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
 }
 
 .text h1 {
@@ -377,7 +393,7 @@ opacity: 50%;
   height: 100%;
   margin: auto;
   /*  margin: 0 auto;*/
-/*    position: relative;*/
+  /*    position: relative;*/
 }
 
 .contact_container {
