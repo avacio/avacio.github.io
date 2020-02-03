@@ -46,6 +46,22 @@
 
     });
   </script>
+
+  <script type="text/javascript">  
+    function updateSize(e){
+      if($(window).width() > 900) {
+        $('#body').addClass('limit1200');
+        $('#body').removeClass('limit400');
+        $('#contact').removeClass('limit');
+      }else{
+        $('#body').addClass('limit400');
+        $('#body').removeClass('limit1200');
+        $('#contact').addClass('limit');
+      }
+    }
+        $(window).on('load', updateSize);
+    $(window).on('resize', updateSize);
+  </script>
   </head>
 
 
@@ -80,10 +96,7 @@
         </div>
       </div>
 
-      <br><br><br>
-      <br><br><br>
       <div class="work_container" id="work">
-
         <div class="teaser_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
           <a href= "https://avacio.github.io/bucket_list_304/" class="fadeOutLink">
             <div class="text">
@@ -184,9 +197,10 @@
 </div>
 -->
       </div>
+    
+
     </div>
 
-    <br><br><br><br><br><br>
     <div class="contact_container" id="contact">
       <img src="img/coffee.gif">
       <h1><font color = white>Let's get an iced capp!</font></h1>
@@ -196,8 +210,9 @@
         <li><a href="https://www.instagram.com/tyrannosrs_lex/" target="_blank"><img src="img/instagram.png"></a></li>
         <li><a href="https://ca.linkedin.com/in/alexisgervacio" target="_blank"><img src="img/linkedin.png"></a></li>
       </ul>
-      <!--                        <h4>Made with the blood, sweat and tears of Alexis</h4>-->
+<!--                              <h4>Made with the blood, sweat and tears of Alexis</h4>-->
     </div>
+
 
     <script src="animation/wow.min.js"></script>
 

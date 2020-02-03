@@ -12,6 +12,24 @@
   <link href="animate.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="img/shuffle-logo.png">
 
+  <script async="" src="analytics.js"></script><script type="text/javascript" src="animation/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="animation/functions.js"></script>
+
+  <script type="text/javascript">  
+    function updateSize(e){
+      if($(window).width() > 800) {
+        $('#body').addClass('limit1200');
+        $('#body').removeClass('limit400');
+        $('#contact').removeClass('limit');
+      }else{
+        $('#body').addClass('limit400');
+        $('#body').removeClass('limit1200');
+        $('#contact').addClass('limit');
+      }
+    }
+    $(window).on('load', updateSize);
+    $(window).on('resize', updateSize);
+  </script>
 
   </head>
 
@@ -56,6 +74,8 @@
         <br><br>
         <iframe width="400" height="300" src="https://www.youtube.com/embed/bZnPZb7I05I" frameborder="0" allowfullscreen></iframe>
       </div>
+        <br><br>
+        <br><br>
 
       <div class="work_container" id="soundbites">
         <h2>Really messy soundbites from my past!
@@ -106,11 +126,8 @@
           </div>
         </div>
       </div>
-      <!--      <br clear="all">-->
     </div>
-    <br clear="all">
 
-    <br><br><br><br>
     <div class="contact_container"> 
       <img src="img/coffee.gif">
       <h1><font color = white>Let's get an iced capp!</font></h1>
