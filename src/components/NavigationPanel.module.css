@@ -1,0 +1,31 @@
+.navigation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-transform: uppercase;
+    /*  font-size: 3vh;*/
+    font-size: 1.7vw;
+    text-align: right;
+    color: #000;
+    letter-spacing: 1.8px;
+    z-index: 66666;
+    right: 4%;
+    top: 14vw;
+}
+
+.navigation ul {
+    list-style: none;
+    line-height: 3;
+}
+
+.navigation a, .navigation div {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navigation a:hover,
+.navigation div:hover {
+    color: #b34d49;
+    text-decoration: none;}

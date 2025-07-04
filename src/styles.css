@@ -1,6 +1,5 @@
-@font-face {
-  font-family: Didot; 
-  src: url('fonts/Didot.ttf')
+* {
+  font-family: sans-serif;
 }
 
 .biganimation {
@@ -29,7 +28,8 @@
 }
 
 .about h1, .resume h1 {
-  font-family: 'Didot'; 
+  /* font-family: 'Didot';  */
+  font-family: sans-serif;
   font-size: 3em; 
   font-weight: 200; 
   text-align: left; 
@@ -44,7 +44,6 @@
 }
 
 .about p, .resume p {
-  font-family: 'Roboto'; 
   font-size: 1.1em; 
   text-align: left;
   font-weight: 300;
@@ -61,15 +60,9 @@
 
 .resume {
   padding-top: 3%;
-  position: absolute:
-    width: 100%; 
-  /*    margin-left: 28%;*/
+  position: absolute;
+  width: 100%; 
   background-color: white; 
-}
-
-h1 {
-  font-family: 'Roboto'; 
-  color: #b34d49;
 }
 
 h2 {
@@ -90,7 +83,7 @@ h2 {
 }
 
 #music p {
-  font-family: 'Lato Light', sans-serif; 
+  /* font-family: 'Lato Light', sans-serif;  */
   font-size: 1em; 
   /*    line-height: 25px;*/
   /*    line-height: 1.3em;*/
@@ -168,7 +161,7 @@ h7 {
 
 p {
   font-size: 2em; 
-  font-family: 'Lato Light'; 
+  /* font-family: 'Lato Light';  */
   display: block;
   margin: 10%; 
   /*  line-height: 20px; */
@@ -216,7 +209,7 @@ body {
   /*  padding-bottom: 300px;*/
   /*  height: auto;*/
   /*	position: relative;*/
-  background: rgba(30,30,30,1.00);
+  /* background: rgba(30,30,30,1.00); */
   z-index: 999999;
   /*
   margin: 0;
@@ -252,44 +245,6 @@ header ul li a:hover {
 .navi_fade {
   display: none;
 }
-
-.navigation {
-  display: block;
-  /*  position: absolute;*/
-
-  margin-left: auto; 
-  margin-right: auto;
-  /*  width: 70%;*/
-  position: relative;
-  font-family: 'Roboto';
-  text-transform: uppercase;
-  /*  font-size: 3vh;*/
-  font-size: 1.7vw;
-  text-align: right;
-  color: #000;
-  letter-spacing: 1.8px;
-  z-index: 66666;
-  right: 4%;
-  /*  top:0;*/
-  /*  top: 3%;*/
-  top: 11vw;
-  /*    top: 11vh;*/
-  /*    top:50%;*/
-  /*  top: 25hh; */
-}
-
-.navigation ul {
-  list-style: none;
-  line-height: 3;
-  /*  line-height: 8vh;*/
-}
-
-.navigation a {
-  color: #000;
-  text-decoration: none;}
-.navigation a:hover {
-  color: #b34d49;
-  text-decoration: none;}
 
 .work_container {
   margin-left: 17%;
@@ -333,7 +288,7 @@ header ul li a:hover {
   /*    width: calc(10vw);*/
   width: 15%;
 /*  margin: 10% 5%; 10% 5%;*/
-  margin: 7% 5%; 7% 5%;
+  margin: 7% 5% 7% 5%;
   /*  margin: 44px 33px 44px 33px;*/
   /*  padding: 10%;*/
   height: auto;
@@ -363,7 +318,7 @@ header ul li a:hover {
 }
 
 .text p {
-  font-family: 'Roboto', sans-serif; 
+  /* font-family: 'Roboto', sans-serif;  */
   /*  font-size: 1.5vw; */
   font-size: 1.2vw; 
   font-weight: 400; 
@@ -386,8 +341,13 @@ header ul li a:hover {
   font-size: 3vw; 
 }
 
+h1 {
+  color: #b34d49;
+  font-size: 1.5em;
+}
+
 .text h1 {
-  font-family: 'Lato'; 
+  /* font-family: 'Lato';  */
   font-size: 1.5em;
   font-weight: 300; 
   padding-bottom: 0;
@@ -422,24 +382,13 @@ header ul li a:hover {
 
 .contact_container {
   position: absolute;
-  /*  position: relative;*/
   width: 100%;
-  /*  height: 300px;*/
   background-color: #b34d49;
-  /*    margin: -300px 0px 0px 0px;*/
-  /*  bottom: 0;*/
   margin-bottom: -100%;
-  /*  margin-bottom: -300px;*/
-  /*  padding-top: 300px;*/
-  /*  margin-top: 55%;*/
   text-align: center;
-  /*    height:100px; */
-
 }
 
 .limit {
-  /*  margin-top: 60%;*/
-  /*    margin-bottom: -288%;*/
   margin-bottom: -288%;
 
 }
@@ -480,7 +429,7 @@ header ul li a:hover {
 }
 
 .contact_container p {
-  font-family: 'Roboto'; 
+  /* font-family: 'Roboto';  */
   /*  font-size: 2.7vh; */
   font-size: 20px;
   text-align: center; 
