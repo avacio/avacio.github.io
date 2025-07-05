@@ -22,8 +22,8 @@
   width: 100%; 
   margin-left: 28%;
   background-color: white; 
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
   /*  margin-bottom: -660px;*/
 }
 
@@ -37,6 +37,12 @@
   margin-top: 8%;
   border-bottom: 7px solid #b34d49;
   width: 54.5%;
+}
+
+.about .seeANeed {
+  /* margin-left: 9%; */
+  width: 40%;
+  padding-right: 30%;
 }
 
 .resume h1 {

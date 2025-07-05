@@ -1,3 +1,7 @@
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './Home';
+import AboutPage from './About';
+
 import React, { useEffect, useState } from 'react';
 import styles from './styles.css';
 import animations from './animation/animate.css';
@@ -8,81 +12,26 @@ import { ProjectsView } from './components/ProjectsView';
 import { ProjectView } from './components/ProjectView';
 
 function App() {
-  const [isWide, setIsWide] = useState(false)
+  return (
+    <Router>
+      {/* <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
+      </nav> */}
 
-
-    function animSequence() {
-      setTimeout(function () {
-        // Animated loop X after initial intro anim
-        document.getElementById('first').style.display = 'none'
-      }, 9 * 1000)
-
-      setTimeout(function () {
-        document.getElementById('loop').style.display = 'block'
-      }, 9 * 1000)
-    }
-
-    useEffect(() => {
-      animSequence();
-
-      // Handler to update window size state
-      const handleResize = () => {
-        setIsWide(window.innerWidth > 900);
-      };
-
-      handleResize();
-      // Add event listener for 'resize'
-      window.addEventListener('resize', handleResize);
-
-      // Clean up function to remove event listener on component unmount
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-
-    }, []); // Empty dependency array ensures it runs only onc
-
-    return (
-      <div className="App">
-
-        <div id="body" className={ isWide ? 'limit1200' : 'limit400' }>
-
-        <header>
-          <span id="logo" className="scroll"><a href="https://avacio.github.io/#home"><img href="index.html" src="img/shuffle-logo.png" alt="" /></a></span>
-        </header>
-
-        <div className="main">
-
-          <div className="biganimation">
-
-            <div className="animation font_color wow fadeInUp" id="first">
-              <img src="img/FinalIteration.gif" alt="" />
-            </div>
-
-            <div className="animation" id="loop">
-              <img src="img/Loop.gif" alt="" />
-            </div>
-          </div>
-
-          <NavigationPanel />
-
-        </div>
-
-
-        <ProjectsView>
-          {/* Iterate over all the projects */}
-          {personalProjectsData.map((project) => (
-            <ProjectView
-              key={project.name}
-              projectData={project}
-            />
-          ))}
-        </ProjectsView>
-        </div>
-
-        <Footer className={isWide ? '' : 'limit'} />
-      </div>
-    );
-  }
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
 

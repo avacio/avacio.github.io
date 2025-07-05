@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import styles from "./NavigationPanel.module.css";
 
 export function NavigationPanel(props) {
@@ -11,9 +12,9 @@ export function NavigationPanel(props) {
     return (
         <div className={styles.navigation}>
             <ul>
-                {/* <li><a className="scroll" onClick={document.getElementById("myid").scrollIntoView({ behavior: "smooth" });} href="#work">Portfolio</a></li> */}
                 <li><div className="scroll" onClick={scrollToWork}>Portfolio</div></li>
-                <li><a href="https://avacio.github.io/about">About Me</a></li>
+                {/* <li><a href="https://avacio.github.io/about">About Me</a></li> */}
+                <li><Link to="/about">About Me</Link></li>
                 <li><a href="alexis_gervacio_resume.pdf">Résumé</a></li>
                 <li><div className="scroll" onClick={scrollToContact}>Contact</div></li>
             </ul>
