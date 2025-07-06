@@ -1,3 +1,5 @@
+/*! MIT License © Sindre Sorhus */
+
 /**
  * @license React
  * react-dom-client.production.js
