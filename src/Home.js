@@ -5,8 +5,10 @@ import animations from './animation/animate.css';
 import { Footer } from './components/Footer';
 import { NavigationPanel } from './components/NavigationPanel';
 import { personalProjects as personalProjectsData } from './data/personalProjects';
+import { proProjects as proProjectsData } from './data/proProjects';
 import { ProjectsView } from './components/ProjectsView';
 import { ProjectView } from './components/ProjectView';
+import { ProjectLinkPreview } from './components/ProjectLinkPreview';
 
 function Home() {
   const [isWide, setIsWide] = useState(false)
@@ -70,7 +72,19 @@ function Home() {
 
 
         <ProjectsView>
+            <h1>Public Professional Projects</h1>
+
+          <div className="ProProjectsContainer">
           {/* Iterate over all the projects */}
+            {proProjectsData.map((project) => (
+              <ProjectLinkPreview
+                key={project.name}
+                projectData={project}
+              />
+            ))}
+            </div>
+
+            <h1>Personal and School Projects</h1>
           {personalProjectsData.map((project) => (
             <ProjectView
               key={project.name}

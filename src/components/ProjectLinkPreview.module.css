@@ -1,0 +1,27 @@
+.ProjectLinkPreview
+{
+    width: 40%;
+    /* float: left; */
+    position: relative;
+    margin: auto;
+    max-width: 500px;
+}
+
+.ProjectLinkPreview>* {
+    margin: 15px 0;
+}
+
+.ProjectLinkPreview p {
+    font-size: small;
+}
+
+p.Title {
+    background-color: black;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+p.Description {
+}
