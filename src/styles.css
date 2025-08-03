@@ -6,9 +6,7 @@
 
 .biganimation {
   width: 100%;
-  /* top: 5vw; */
   top: 0;
-  /* position: absolute; */
 }
 
 .me img {
@@ -88,18 +86,6 @@ h2 {
   margin-right: 9%;
 }
 
-audio::-internal-media-controls-download-button {
-  display: none;
-}
-
-audio::-webkit-media-controls-enclosure {
-  overflow: hidden;
-}
-
-audio::-webkit-media-controls-panel {
-  width: calc(100% + 30px);
-}
-
 #col2 {
   margin-left: 52%;
   margin-top: -42.25%;
@@ -108,7 +94,7 @@ audio::-webkit-media-controls-panel {
 
 #logo img {
   /*  width: 40px; */
-  width: 40px;
+  width: 50px;
   /*  width: 4.5vw;*/
   position: absolute;
   left: 30px;
@@ -121,7 +107,9 @@ audio::-webkit-media-controls-panel {
   margin-right: auto;
   width: 100%;
   right: 0;
-    border-bottom: solid thick var(--mountain-deep);
+    /* border-bottom: solid thick var(--mountain-deep); */
+  margin-bottom: 0;
+  max-height: 92vh;
 }
 
 .limit400 .animation img {
@@ -132,7 +120,9 @@ audio::-webkit-media-controls-panel {
   width: 150%;
 }
 
-#loop {}
+#loop {
+  display: flex;
+}
 
 h7 {
   font-size: 3em;
@@ -156,7 +146,7 @@ p {
   position: absolute;
   font-size: 7vw;
   z-index: 1;
-    top: 100px;
+    top: 15%;
     left: 30px;
 }
 
@@ -188,23 +178,16 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100%;
-
-  /*  height: 100%;*/
   position: relative;
-  /*  display: block;*/
-  /*  display: inline-block;*/
   background-color: white;
 }
 
 #body {
   width: 100%;
   min-height: 100%;
-  /*  height: 100%;*/
-  margin-bottom: 300px;
+  margin-bottom: 100px;
   z-index: 999999;
 }
-
-/*#body::after{ content:''; display:block; height:100px; }*/
 
 .active {
   left: 0 !important;
@@ -302,12 +285,13 @@ header ul li a:hover {
 
 .text p {
   /* font-family: 'Roboto', sans-serif;  */
-  font-size: 1.2vw;
+  font-size: 1em;
   font-weight: 400;
   text-align: left;
   letter-spacing: 1.2px;
   color: white;
   background-color: black;
+  padding: 3px;
   width: 100%;
   height: 100%;
   z-index: 1000;
@@ -341,9 +325,12 @@ h1 {
 }
 
 .main {
-  padding-bottom: 20%;
+  /* padding-bottom: 20%; */
   position: relative;
   background-color: white;
+  display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 .limit {
@@ -352,14 +339,13 @@ h1 {
 }
 
 .contact_container {
-  width: 100%;
   background-color: var(--brand-color);
   text-align: center;
   padding: 20px;
   height: 70%;
 }
 
-.contact_container::before {
+/* .contact_container::before {
   margin-left: -20px;
   margin-right: -20px;
   top: -80px;
@@ -374,6 +360,18 @@ h1 {
   filter: brightness(0) saturate(100%) invert(66%) sepia(88%) saturate(2773%) hue-rotate(329deg) brightness(103%) contrast(85%);
 }
 
+*/ .footer_edge {
+  padding-bottom: 60px;
+  background-position: center bottom;
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  background-image: url("images/vecteezy-mountain.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  filter: brightness(0) saturate(100%) invert(66%) sepia(88%) saturate(2773%) hue-rotate(329deg) brightness(103%) contrast(85%);
+}
 .contact_container ul {
   display: block;
   list-style: none;
@@ -408,8 +406,10 @@ h1 {
   font-size: 20px;
   text-align: center;
   font-weight: 300;
-  margin: 10px;
+  margin-top: 10px;
+    margin-bottom: 10px;
   color: black;
+  text-wrap: wrap;
 }
 
 .contact_container h4 {

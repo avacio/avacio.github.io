@@ -1,27 +1,31 @@
 @import url("../styleConstants.css");
 .navigation {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+
     text-transform: uppercase;
-    /*  font-size: 3vh;*/
-    font-size: 1.7vw;
-    text-align: right;
+    font-size: 0.9em;
     color: #000;
     letter-spacing: 1.8px;
     z-index: 66666;
-    right: 4%;
-    top: 14vw;
+    /* width: 100%; */
+        background-color: black;
 }
 
 .navigation ul {
     list-style: none;
     line-height: 3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
+.navigation li {
+    display: inline-block;
+    text-align: center;
+    flex: 1 1 auto;
+        min-width: 150px;
+}
 .navigation a, .navigation div {
-    color: #000;
+    color: white;
     text-decoration: none;
     font-weight: 700;
 }

@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { Footer } from '././components/Footer';
-import { NavigationPanel } from '././components/NavigationPanel';
 
 function About() {
   const [isWide, setIsWide] = useState(false)
@@ -33,7 +32,7 @@ function About() {
         <div id="body" className={ isWide ? 'limit1200' : 'limit400' }>
 
           <header>
-            <span id="logo" className="scroll"><Link to="/"><img src="img/shuffle-logo.png" alt="" /></Link></span>
+            <span id="logo" className="scroll"><Link to="/"><img src="img/sisyphus-round.png" alt="" /></Link></span>
           </header>
 
           <div className="about-columns">

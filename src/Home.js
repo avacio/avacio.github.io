@@ -57,7 +57,7 @@ function Home() {
           <div className="biganimation">
 
             <div className="animation" id="loop">
-                <img src="img/sisyphus.gif" alt="" />
+                <img src="img/sisyphus.gif" alt="Animation of a girl rolling a rock up a mountain like Sisyphus." />
             </div>
           </div>
 

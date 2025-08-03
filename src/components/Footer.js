@@ -3,7 +3,8 @@ import styles from "./Footer.module.css";
 export function Footer(props) {
     return (
         <>
-            <div class="contact_container" id="contact">
+            <span className="footer_edge"></span>
+            <div className="contact_container" id="contact">
                 <img src="/img/coffee.gif" alt=""/>
                     <h1><font color="white">Let's get a coffee!</font></h1>
                     <p>Or tea, if that's your thing. Either way, I'd love to hear from you!</p>

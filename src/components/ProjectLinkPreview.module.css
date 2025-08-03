@@ -22,6 +22,7 @@ p.Title {
     color: white;
     letter-spacing: 1.2px;
     text-wrap: wrap;
+    padding: 3px;
 }
 
 p.Description {
