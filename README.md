@@ -28,6 +28,10 @@ Coincidentally, the shape resembles that of Canada... or a giant blob, depending
 ## Website
 The rest of my website is the result of *many* hours of blood, sweat, and tears. Also debugging. Lots of debugging. I've also made pages for an About section, and a Music section, but I expect that this website will grow as time goes on.
 
+## Attributions
+- Mountain Range picture background in footer:
+  - Transparent Background PNGs by Vecteezy: https://www.vecteezy.com/vector-art/6552247-mountain-silhouette-mountain-ridge-mountain-background
+
 
 _____
 

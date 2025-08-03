@@ -1,3 +1,4 @@
+@import url("../styleConstants.css");
 .navigation {
     display: block;
     margin-left: auto;
@@ -27,5 +28,5 @@
 
 .navigation a:hover,
 .navigation div:hover {
-    color: #b34d49;
+    color: var(--brand-color);
     text-decoration: none;}

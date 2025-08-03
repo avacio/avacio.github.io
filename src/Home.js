@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import styles from './styles.css';
-import animations from './animation/animate.css';
 import { Footer } from './components/Footer';
 import { NavigationPanel } from './components/NavigationPanel';
 import { personalProjects as personalProjectsData } from './data/personalProjects';
@@ -15,10 +14,10 @@ function Home() {
 
 
     function animSequence() {
-      setTimeout(function () {
-        // Animated loop X after initial intro anim
-        document.getElementById('first').style.display = 'none'
-      }, 9 * 1000)
+      // setTimeout(function () {
+      //   // Animated loop X after initial intro anim
+      //   document.getElementById('first').style.display = 'none'
+      // }, 9 * 1000)
 
       setTimeout(function () {
         document.getElementById('loop').style.display = 'block'
@@ -26,7 +25,7 @@ function Home() {
     }
 
     useEffect(() => {
-      animSequence();
+      // animSequence();
 
       // Handler to update window size state
       const handleResize = () => {
@@ -42,27 +41,23 @@ function Home() {
         window.removeEventListener('resize', handleResize);
       };
 
-    }, []); // Empty dependency array ensures it runs only onc
+    }, []); // Empty dependency array ensures it runs only once
 
     return (
       <div className="App">
 
-        <div id="body" className={ isWide ? 'limit1200' : 'limit400' }>
+        <div id="body" className={isWide ? 'limit1200' : 'limit400'}>
 
-        <header>
-          <span id="logo" className="scroll"><Link to="/"><img src="img/shuffle-logo.png" alt="" /></Link></span>
-        </header>
+          {/* <header>
+            <span id="logo" className="scroll"><Link to="/"><img src="img/shuffle-logo.png" alt="" /></Link></span>
+        </header> */}
 
         <div className="main">
-
+            <div className="nameTitle">alexis gervacio</div>
           <div className="biganimation">
 
-            <div className="animation font_color wow fadeInUp" id="first">
-              <img src="img/FinalIteration.gif" alt="" />
-            </div>
-
             <div className="animation" id="loop">
-              <img src="img/Loop.gif" alt="" />
+                <img src="img/sisyphus.gif" alt="" />
             </div>
           </div>
 

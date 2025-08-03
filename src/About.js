@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-// import styles from '././styles.css';
-// import animations from '././animation/animate.css';
 import { Footer } from '././components/Footer';
 import { NavigationPanel } from '././components/NavigationPanel';
 
