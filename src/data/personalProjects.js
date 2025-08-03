@@ -1,5 +1,10 @@
 export const personalProjects = [
     {
+        name: "MY PERSONAL WEBSITE",
+        link: "https://github.com/avacio/avacio.github.io",
+        imageSrc: "img/project-icons/sisyphus-rock.png"
+    },
+    {
         name: "BARBIE PINK JETBRAINS THEME",
         link: "https://github.com/avacio/BarbiePink-Jetbrains-Theme",
         imageSrc: "img/project-icons/barbiePink.png"
