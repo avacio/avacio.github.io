@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.6baeb9b2.css",
-    "main.js": "/static/js/main.f345cfe2.js",
+    "main.css": "/static/css/main.b35c79cd.css",
+    "main.js": "/static/js/main.c2f6b671.js",
     "static/media/vecteezy-mountain.png": "/static/media/vecteezy-mountain.f97026f54883ed1b6710.png",
     "index.html": "/index.html",
-    "main.6baeb9b2.css.map": "/static/css/main.6baeb9b2.css.map",
-    "main.f345cfe2.js.map": "/static/js/main.f345cfe2.js.map"
+    "main.b35c79cd.css.map": "/static/css/main.b35c79cd.css.map",
+    "main.c2f6b671.js.map": "/static/js/main.c2f6b671.js.map"
   },
   "entrypoints": [
-    "static/css/main.6baeb9b2.css",
-    "static/js/main.f345cfe2.js"
+    "static/css/main.b35c79cd.css",
+    "static/js/main.c2f6b671.js"
   ]
 }
