@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import styles from './styles.css';
 import { Footer } from './components/Footer';
 import { NavigationPanel } from './components/NavigationPanel';
@@ -9,24 +9,21 @@ import { ProjectsView } from './components/ProjectsView';
 import { ProjectView } from './components/ProjectView';
 import { ProjectLinkPreview } from './components/ProjectLinkPreview';
 
+
 function Home() {
-  const [isWide, setIsWide] = useState(false)
-
-
-    function animSequence() {
-      // setTimeout(function () {
-      //   // Animated loop X after initial intro anim
-      //   document.getElementById('first').style.display = 'none'
-      // }, 9 * 1000)
-
-      setTimeout(function () {
-        document.getElementById('loop').style.display = 'block'
-      }, 9 * 1000)
+  const [isWide, setIsWide] = useState(false);
+  const [isGifLoaded, setGifLoaded] = useState(0);
+  const imageLoaded = () => {
+    if (isGifLoaded == 0) {
+      setGifLoaded(1);
     }
+    setTimeout(() => {
+      setGifLoaded(2);
+    }, 3000);
+  }
 
-    useEffect(() => {
-      // animSequence();
 
+  useEffect(() => {
       // Handler to update window size state
       const handleResize = () => {
         setIsWide(window.innerWidth > 900);
@@ -46,18 +43,19 @@ function Home() {
     return (
       <div className="App">
 
+        <div className={isGifLoaded == 0 ? "loading-splash show" : isGifLoaded == 1 ? "loading-splash hide" : "loading-splash displayNone"}></div>
+
         <div id="body" className={isWide ? 'limit1200' : 'limit400'}>
 
           {/* <header>
             <span id="logo" className="scroll"><Link to="/"><img src="img/shuffle-logo.png" alt="" /></Link></span>
         </header> */}
-
         <div className="main">
             <div className="nameTitle">alexis gervacio</div>
           <div className="biganimation">
-
-            <div className="animation" id="loop">
-                <img src="img/sisyphus.gif" alt="Animation of a girl rolling a rock up a mountain like Sisyphus." />
+              <div className="animation" id="loop" >
+                <img key="img/sisyphus.gif" src="img/sisyphus.gif" onLoad={imageLoaded}
+                  alt="Animation of a girl rolling a rock up a mountain like Sisyphus." />
             </div>
           </div>
 
