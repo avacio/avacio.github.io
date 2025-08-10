@@ -9,7 +9,7 @@ The personal branding and website of Alexis Gervacio!<br>
 In July 2025, I was laid off from a job and team that I really loved. At first I was optimistic and full of hope, thinking that it would be a good time to change things up anyways. As days of job applications and upskilling turned into weeks of job applications and upskilling, I found myself sometimes struggling for motivation. In these times, after recharging with friends and nature, I was reminded of the Story of Sisyphus. Doomed to push a rock up a mountain, only for it to roll back down each time he neared the top. An eternal toil. Despite these circumstances, as Albert Camus said, "one must imagine Sisyphus happy". Meaning that even in the face of a seemingly absurd and eternally repetitive task, one can obtain happiness by choosing to accept fate and find meaning in the present moment. Happiness is a choice, albeit not an easy one. I'm really trying to embrace this motto as I continue my journey.
 
 <br><br>
-My signature colour is **#ec7e51**: an orange with I think encapsulates warmth, energy, playfulness.
+My signature colour is **#ec7e51**: an orange which I think encapsulates warmth, energy, playfulness.
 
 ## Name
 I suppose the name **"avacio"** may seem nonsensical at first, but when I was scrounging my brain for any possible cool and funny and relevant usernames, my friend just laid it down, clean and simple. <br>
