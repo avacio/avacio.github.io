@@ -12,16 +12,7 @@ import { ProjectLinkPreview } from './components/ProjectLinkPreview';
 
 function Home() {
   const [isWide, setIsWide] = useState(false);
-  const [isGifLoaded, setGifLoaded] = useState(0);
-  const imageLoaded = () => {
-    if (isGifLoaded == 0) {
-      setGifLoaded(1);
-    }
-    setTimeout(() => {
-      setGifLoaded(2);
-    }, 3000);
-  }
-
+  const [isAnimLoaded, setAnimLoaded] = useState(0);
 
   useEffect(() => {
       // Handler to update window size state
@@ -38,24 +29,33 @@ function Home() {
         window.removeEventListener('resize', handleResize);
       };
 
-    }, []); // Empty dependency array ensures it runs only once
+  }, []); // Empty dependency array ensures it runs only once
+
+  useEffect(() => {
+    document.getElementById('vidLoop').addEventListener('loadeddata', function () {
+      // Video is loaded and can be played
+      if (isAnimLoaded == 0) {
+        setAnimLoaded(1);
+      }
+      setTimeout(() => {
+        setAnimLoaded(2);
+      }, 3000);
+    }, false);
+  }, []);
 
     return (
       <div className="App">
 
-        <div className={isGifLoaded == 0 ? "loading-splash show" : isGifLoaded == 1 ? "loading-splash hide" : "loading-splash displayNone"}></div>
+        <div className={isAnimLoaded == 0 ? "loading-splash show" : isAnimLoaded == 1 ? "loading-splash hide" : "loading-splash displayNone"}><div className={isAnimLoaded == 0 ? "loader" : "displayNone"}></div></div>
 
         <div id="body" className={isWide ? 'limit1200' : 'limit400'}>
 
-          {/* <header>
-            <span id="logo" className="scroll"><Link to="/"><img src="img/shuffle-logo.png" alt="" /></Link></span>
-        </header> */}
         <div className="main">
             <div className="nameTitle">alexis gervacio</div>
           <div className="biganimation">
               <div className="animation" id="loop" >
-                <img key="img/sisyphus.gif" src="img/sisyphus.gif" onLoad={imageLoaded}
-                  alt="Animation of a girl rolling a rock up a mountain like Sisyphus." />
+                <video id="vidLoop" autoPlay="autoplay" loop="loop" muted="" playsInline loading="eager"
+                  alt="Animation of a girl rolling a rock up a mountain like Sisyphus."><source src="img/sisyphus.mp4" type="video/mp4" /></video>
             </div>
           </div>
 

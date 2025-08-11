@@ -103,19 +103,33 @@ h2 {
   margin-right: auto;
   width: 100%;
   right: 0;
-    /* border-bottom: solid thick var(--mountain-deep); */
+  margin-bottom: 0;
+    max-height: 92vh;
+  }
+  
+  .animation video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    right: 0;
   margin-bottom: 0;
   max-height: 92vh;
+  object-fit: cover;
 }
 
 .limit400 .animation img {
-  /* right: 0; */
   overflow: hidden;
   object-fit: cover;
   margin-left: -50%;
   width: 150%;
 }
 
+.limit400 .animation video {
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: -50%;
+  width: 150%;
+}
 #loop {
   display: flex;
 }
@@ -441,4 +455,40 @@ h1 {
 }
 .displayNone {
   display: none;
+}
+.overflowHidden {
+  overflow: hidden;
+}
+
+.loader {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  position: fixed;
+  background: var(--loader-1);
+    box-shadow: -24px 0 var(--loader-1), 24px 0 var(--loader-1);
+  box-sizing: border-box;
+  animation: shadowPulse 3s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: var(--loader-1);
+      box-shadow: -24px 0 var(--loader-2), 24px 0 var(--loader-1);
+  }
+
+  66% {
+    background: var(--loader-2);
+      box-shadow: -24px 0 var(--loader-1), 24px 0 var(--loader-1);
+  }
+
+  100% {
+    background: var(--loader-1);
+      box-shadow: -24px 0 var(--loader-1), 24px 0 var(---loader-2);
+  }
 }
