@@ -55,8 +55,7 @@ function Home() {
             <div className="nameTitle">alexis gervacio</div>
           <div className="biganimation">
               <div className="animation" id="loop" >
-                {animLoadState < AnimLoadState.ANIM_LOADED &&
-                  <img src="img/sisyphus-transparent.png"
+                {<img src="img/sisyphus-transparent.png"
                     className="staticAnimFrame"
                     onLoad={onStaticImageLoaded}
                     fetchPriority="high"
