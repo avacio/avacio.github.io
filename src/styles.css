@@ -19,7 +19,7 @@
 
 .about {
   padding: 7%;
-    display: flex;
+  display: flex;
     flex-direction: column;
   margin-left: 28%;
   background-color: white;
@@ -41,7 +41,7 @@
 
 .about .seeANeed {
   margin-left: 9%;
-    /* width: 40%; */
+  /* width: 40%; */
   padding-right: 30%;
 }
 
@@ -104,14 +104,16 @@ h2 {
   width: 100%;
   right: 0;
   margin-bottom: 0;
-    max-height: 92vh;
-  }
-  
-  .animation video {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    right: 0;
+  max-height: 92vh;
+  object-fit: cover;
+    background-color: var(--brand-color);
+}
+
+.animation video {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  right: 0;
   margin-bottom: 0;
   max-height: 92vh;
   object-fit: cover;
@@ -122,6 +124,7 @@ h2 {
   object-fit: cover;
   margin-left: -50%;
   width: 150%;
+  background-color: var(--brand-color);
 }
 
 .limit400 .animation video {
@@ -130,10 +133,18 @@ h2 {
   margin-left: -50%;
   width: 150%;
 }
+
 #loop {
   display: flex;
 }
 
+.staticAnimFrame {
+  flex-shrink: 1;
+}
+
+#sisyphusAnim {
+  flex-shrink: 0;
+}
 h7 {
   font-size: 3em;
   font-family: 'Lato';
@@ -156,14 +167,14 @@ p {
   position: absolute;
   font-size: 7vw;
   z-index: 1;
-    top: 15%;
+  top: 15%;
     left: 30px;
 }
 
 html {
   height: 100%;
   width: 100%;
-    overflow-x: hidden;
+  overflow-x: hidden;
     /* overflow: hidden; */
   /*  position: relative;*/
   /*  position:absolute;*/
@@ -339,13 +350,8 @@ h1 {
   position: relative;
   background-color: white;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
     gap: 0;
-}
-
-.limit {
-  /* todo */
-  /* margin-bottom: -288%; */
 }
 
 .contact_container {
@@ -382,6 +388,7 @@ h1 {
   background-size: contain;
   filter: brightness(0) saturate(100%) invert(66%) sepia(88%) saturate(2773%) hue-rotate(329deg) brightness(103%) contrast(85%);
 }
+
 .contact_container ul {
   display: block;
   list-style: none;
@@ -417,7 +424,7 @@ h1 {
   text-align: center;
   font-weight: 300;
   margin-top: 10px;
-    margin-bottom: 10px;
+  margin-bottom: 10px;
   color: black;
   text-wrap: wrap;
 }
@@ -432,6 +439,7 @@ h1 {
   text-align: center;
   width: 100%;
 }
+
 .loading-splash {
   position: absolute;
   width: 100%;
@@ -453,9 +461,11 @@ h1 {
   /* Add transition for opacity */
   pointer-events: none;
 }
+
 .displayNone {
   display: none;
 }
+
 .overflowHidden {
   overflow: hidden;
 }
@@ -471,7 +481,7 @@ h1 {
   margin: 15px auto;
   position: fixed;
   background: var(--loader-1);
-    box-shadow: -24px 0 var(--loader-1), 24px 0 var(--loader-1);
+  box-shadow: -24px 0 var(--loader-1), 24px 0 var(--loader-1);
   box-sizing: border-box;
   animation: shadowPulse 3s linear infinite;
 }
@@ -479,16 +489,16 @@ h1 {
 @keyframes shadowPulse {
   33% {
     background: var(--loader-1);
-      box-shadow: -24px 0 var(--loader-2), 24px 0 var(--loader-1);
+    box-shadow: -24px 0 var(--loader-2), 24px 0 var(--loader-1);
   }
 
   66% {
     background: var(--loader-2);
-      box-shadow: -24px 0 var(--loader-1), 24px 0 var(--loader-1);
+    box-shadow: -24px 0 var(--loader-1), 24px 0 var(--loader-1);
   }
 
   100% {
     background: var(--loader-1);
-      box-shadow: -24px 0 var(--loader-1), 24px 0 var(---loader-2);
+    box-shadow: -24px 0 var(--loader-1), 24px 0 var(---loader-2);
   }
 }
