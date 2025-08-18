@@ -13,8 +13,7 @@ export const proProjects = [
         name: "🛩️ Airport BillionAir Idle Tycoon",
         link: "https://play.google.com/store/apps/details?id=com.rogueharbour.billionair.airport&pli=1",
         link2: "https://apps.apple.com/ca/app/airport-billionair-idle-tycoon/id1553151665",
-        // description: "Idle mobile game for iOS and Android. Welcome aboard Pilot, let's kick the tires and light the fires of your Airport empire today!"
-        description: `Idle mobile game for <a href="https://apps.apple.com/ca/app/airport-billionair-idle-tycoon/id1553151665" target="_blank">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.rogueharbour.billionair.airport&amp;pli=1" target="_blank">Android</a>. Welcome aboard Pilot, let's kick the tires and light the fires of your Airport empire today!`
+        description: `Idle mobile game for <a href="https://apps.apple.com/ca/app/airport-billionair-idle-tycoon/id1553151665" target="_blank">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.rogueharbour.billionair.airport&amp;pli=1" target="_blank">Android</a>. Welcome aboard Pilot, let's kick the tires and light the fires of your Airport empire today! Currently at 1M+ downloads in app stores.`
     },
     {
         name: "🐴 Horse Ranch Tycoon",
